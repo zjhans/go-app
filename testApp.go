@@ -25,8 +25,6 @@ func init() {
 
 func main() {
 	mux := http.NewServeMux()
-
 	mux.HandleFunc("/", Home)
-
 	http.ListenAndServe(":8080", mux)
 }
